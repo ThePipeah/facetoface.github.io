@@ -1,0 +1,138 @@
+@media only screen and (max-width: 1150px) {
+    /*** About-us ***/
+    .treneri img {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+    .treneri .span-1-of-2 {
+        width: 48.3%;
+    }
+    
+    /***** Photo galllery ***/
+    .photo-segment {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /**** referencie ***/
+    .col.span-1-of-3.one-reference {
+        width: 48%;
+        margin-left: 10px;
+        text-align: justify;
+    }
+    
+    .one-reference:nth-child(3) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    /*** Služby-info ***/
+    .služby-info .span-1-of-2 {
+        width: 96%;
+    }
+    
+    .služby-info img {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media only screen and (max-width: 1015px) {
+    nav ul li {
+        display: block;
+    }
+    
+    .nav-background {
+        /*display: none;*/
+    }
+    
+    .mobile-nav-back {
+        height: 200px;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(0,0,0,0.9);
+        border-bottom: 2px solid #fff;
+        display: none;
+        z-index: 100;
+    }
+    
+    .mobile-nav-icon {
+        display: inline-block;
+        z-index: 200;
+        position: fixed;
+        right: 2%;
+    }
+    
+    nav ul {
+        display: none;
+        z-index: 200;
+    }
+    
+    nav ul li a:hover,
+    nav ul li a:active {
+        border-bottom: 2px solid transparent;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    /***** Photo galllery ***/
+     .photo-segment .col {
+        margin-left: 0;
+    }
+    
+    .photo-segment li {
+    width: 100%;
+    }   
+    
+    /*** About-us ***/
+
+    .treneri .span-1-of-2 {
+        width: 96%;
+    }
+    
+    .treneri .col {
+        margin-left: 0;
+    }
+    
+    .treneri img {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    /**** header ***/
+    .header-text {
+        width: 100%;
+        left: 0%;
+        transform: translate(0%,0%);
+    }
+    
+    .header-text h1 {
+    text-align: center;
+    }
+    
+    .btn {
+        display: block;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    /**** referencie ***/
+    .col.span-1-of-3.one-reference {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 20px;
+        text-align: justify;
+    }
+    
+    .photo-name {
+        float: right;
+        margin-right: 25px;
+    }
+}
+
+

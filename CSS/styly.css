@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+    box-sizing: border-box;
+}
+
+/*** reusable ***/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.heading-main h2 {
+    text-align: center;
+   /* margin-top: 20px;*/
+    font-size: 30px;
+}
+
+.heading-main h2:after {
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 3px solid goldenrod;
+    margin: 10px auto;
+}
+
+.empty-space {
+    height: 50px;
+}
+
+/*** header ***/
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../obrazky/obrazok.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.nav-background {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 50;
+}
+
+#logo img {
+    width: 150px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+nav ul {
+    float: right;
+    margin-top: 7px;
+    position: fixed;
+    margin-left: 31.5%;
+    z-index: 100;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+    
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: goldenrod;
+    font-size: 30px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    border-bottom: 2px solid goldenrod;
+    transition: border-bottom 2s;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%)
+}
+
+.header-text h1 {
+    color: goldenrod;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    word-spacing: 3.5px;
+    
+}
+
+.btn {
+    display: inline-block;
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 20px;
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background: black;
+}
+
+.btn-empty:link,
+.btn-empty:visited {
+    margin-left: 10px;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    transition: background 0.5s;
+    background-color: goldenrod;
+    color: black;
+}
+
+.btn-empty:hover,
+.btn-empty:active {
+    transition: background 0.5s;
+    background-color: goldenrod;
+    color: black;
+}
+
+/* Mobile navigation*/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 5px;
+    display: none;
+}
+
+/*** About us ***/
+
+.treneri img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 4px 6px 10px black;
+}
+
+/*** Služby-info ***/
+
+.služby-info img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 4px 6px 10px black;
+}
+
+.text-sluzba {
+    margin-bottom: 20px;
+}
+
+.text-sluzba div {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 12px;
+    float: left
+}
+
+.text-sluzba p {
+    margin-left: 60px;
+    text-align: justify;
+}
+
+
+
+/**** referencie ***/
+
+.referencie {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../obrazky/obrazok.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.referencie h2 {
+    color: goldenrod;
+    padding-top: 10px;
+}
+
+.one-reference {
+    color: goldenrod;
+    font-size: 20px;
+}
+
+.one-reference p {
+    font-style: italic;
+    text-align: justify;
+}
+
+.photo-name {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.photo-name p {
+   padding: 38px;
+   margin-left: 95px;
+   font-style: normal;
+}
+
+.photo-name img {
+    width: 100px;
+    border-radius: 50%;
+    float: left;
+}
+
+/***** Photo galllery ***/
+
+.photo-segment li {
+    list-style-type: none;
+    background: black;
+    overflow: hidden;
+    height: 550px;
+}
+
+.photo-segment img {
+    width: 100%;
+    opacity: 0.5;
+    transform: scale(1.5);
+}
+
+.photo-segment img:hover {
+    transition: transform 0.5s, opacity 0.5s;
+    transform: scale(1);
+    opacity: 1;
+}
+
+/*** Contact form ***/
+
+.contact-form {
+    max-width: 700px;
+    text-align: center;
+}
+
+.contact-form input {
+    width: 80%;
+    margin: 5px 0px;
+    padding: 7px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.contact-form textarea {
+    width: 80%;
+    margin: 5px 0px;
+    padding: 7px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+    font-family: arial;
+}
+
+input[type="submit"] {
+    background: goldenrod;
+    font-size: 20px;
+}
+
+input[type="submit"]:hover {
+    transition: background 1.5s, color 1.5s;
+    background: black;
+    color: goldenrod;
+    font-size: 20px;
+}
+
+/**** footer ***/
+
+.footer-page {
+    background: goldenrod;
+    margin-top: 30px;
+    color: black;
+}
+
+.social {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.social p {
+    display: inline;
+    margin-right: 20px;
+}
+
+.social p a:link,
+.social p a:visited {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.social p a:hover,
+.social p a:active {
+    transition: color 0.5s;
+    color: white;
+}
+
+.footer-text {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+/**** stop floating***/
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
